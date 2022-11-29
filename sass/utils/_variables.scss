@@ -63,6 +63,16 @@ $fonts: (
 
 // ========== breakpoints ==========
 
+$sizes: (
+  'mobile-width': 480px,
+  'tablet-width': 768px,
+  'desktop-width': 1200px,
+);
+
+@function getSize($var) {
+  @return map-get($sizes, $var);
+}
+
 $breakpoints: (
   'mobile': (
     min-width: 480px,

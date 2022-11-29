@@ -39,4 +39,29 @@ a {
 button {
   font-family: inherit;
   cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    padding-left: 31px;
+    padding-right: 31px;
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 39px;
+    padding-right: 39px;
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+  }
 }/*# sourceMappingURL=main.css.map */
