@@ -1,5 +1,6 @@
 body {
-  font-family: getFont(main);
+  font-family: "Open Sans", sans-serif;
+  color: #303030;
   background-color: #fff;
 }
 
@@ -32,6 +33,7 @@ ul {
 a {
   display: inline-block;
   text-decoration: none;
+  color: #303030;
 }
 
 button {

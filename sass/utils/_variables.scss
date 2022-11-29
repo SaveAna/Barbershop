@@ -6,10 +6,84 @@ $colors: (
   'accent': #ff6c00,
   'head-details': #9da4bd99,
   'head-text': #9da4bd,
-  'slider': #191c2633,
   'about-text': #555555,
 );
 
 @function getColor($var) {
   @return map-get($colors, $var);
+}
+
+$bg-colors: (
+  'dark': #191c26,
+  'light': #f7f7f7,
+  'overlay': #111319,
+  'slider': #191c2633,
+
+  'gradient-1': linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%),
+  'gradient-2': linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%),
+);
+
+@function getBgColor($var) {
+  @return map-get($bg-colors, $var);
+}
+
+$shadows: (
+  'menu': (
+    -4px 0px 8px rgba(0, 0, 0, 0.04),
+    -2px 0px 4px rgba(0, 0, 0, 0.08),
+    -1px 0px 3px rgba(0, 0, 0, 0.16),
+  ),
+  'menu-overlay': (
+    0px 4px 8px rgba(0, 0, 0, 0.04),
+    0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16),
+  ),
+);
+
+@function getShadow($var) {
+  @return map-get($shadows, $var);
+}
+
+// ========== fonts ==========
+
+$fonts: (
+  'main': (
+    'Open Sans',
+    sans-serif,
+  ),
+  'secondary': (
+    'Raleway',
+    sans-serif,
+  ),
+);
+
+@function getFont($var) {
+  @return map-get($fonts, $var);
+}
+
+// ========== breakpoints ==========
+
+$breakpoints: (
+  'mobile': (
+    min-width: 480px,
+  ),
+  'tablet': (
+    min-width: 768px,
+  ),
+  'desktop': (
+    min-width: 1200px,
+  ),
+  'max-mobile': (
+    max-width: 767px,
+  ),
+  'max-tablet': (
+    max-width: 1199px,
+  ),
+  'max-desctop': (
+    max-width: 1600px,
+  ),
+) !default;
+
+@function getPoint($var) {
+  @return map-get($breakpoints, $var);
 }

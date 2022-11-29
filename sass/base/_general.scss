@@ -1,6 +1,6 @@
 body {
   font-family: getFont(main);
-  color: getColor(primary-black);
+  color: getColor(primary-dark);
   background-color: getColor(primary-white);
 }
 
@@ -33,7 +33,7 @@ ul {
 a {
   display: inline-block;
   text-decoration: none;
-  // color: getColor(primary-black);
+  color: getColor(primary-dark);
 }
 
 button {
