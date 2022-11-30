@@ -1,8 +1,15 @@
 @import './utils/variables';
 @import './utils/placeholders';
 @import './utils/mixins';
+
 @import './base/general';
 @import './base/responsive';
-@import './layouts/footer';
+
+@import './layouts/logo';
 @import './layouts/header';
 @import './layouts/menu';
+@import './layouts/footer';
+
+@import './components/toggle-button';
+@import './components/slider';
+@import './components/hero';

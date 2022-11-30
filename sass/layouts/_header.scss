@@ -1,0 +1,9 @@
+.header {
+  background-color: getColor(primary-dark);
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__container {
+    display: flex;
+  }
+}

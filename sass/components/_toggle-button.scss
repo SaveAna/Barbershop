@@ -1,0 +1,45 @@
+.burger-toggle {
+  fill: getColor(primary-white);
+
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  //   @include vertical-padding(10px, 10px);
+  transition: transform 500ms ease-in-out;
+  z-index: 10;
+
+  &--append {
+    margin-left: auto;
+  }
+
+  &:hover,
+  &:focus {
+    fill: getColor(primary-dark);
+  }
+
+  &:active {
+    transform: scale(1.5);
+    transition: transform 500ms ease-in-out;
+  }
+
+  @include respond-to(tablet) {
+    display: none;
+  }
+
+  & .cross {
+    display: none;
+  }
+
+  &--enabled {
+    .cross {
+      display: block;
+    }
+
+    .burger {
+      display: none;
+    }
+  }
+}

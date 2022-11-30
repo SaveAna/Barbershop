@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  @include respond-to(mobile) {
+  @include respond-to(max-mobile) {
     padding-left: 31px;
     padding-right: 31px;
     width: getSize(mobile-width);

@@ -1,0 +1,53 @@
+.hero {
+  background-color: getColor(primary-dark);
+  @include respond-to(max-mobile) {
+    padding-top: 69px;
+    padding-bottom: 209px;
+  }
+
+  &__subtitle {
+    @include respond-to(max-mobile) {
+      position: relative;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 1.36;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      color: getColor(hero-sub);
+      padding-left: 80px;
+      margin-bottom: 20px;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 60px;
+        height: 1px;
+        left: 0;
+        top: 50%;
+        background-color: getColor(hero-sub);
+      }
+    }
+  }
+
+  &__title {
+    @include respond-to(max-mobile) {
+      font-family: getFont(secondary);
+      font-size: 48px;
+      line-height: 1.17;
+      letter-spacing: 0.05em;
+      color: getColor(primary-white);
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+    @include respond-to(max-mobile) {
+      font-size: 16px;
+      line-height: 1.62;
+      letter-spacing: 0.02em;
+      max-width: 336px;
+      color: getColor(hero-descript);
+    }
+  }
+}

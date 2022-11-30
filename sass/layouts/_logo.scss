@@ -1,0 +1,5 @@
+.logo {
+  @include respond-to(max-mobile) {
+    fill: getColor(primary-white);
+  }
+}
