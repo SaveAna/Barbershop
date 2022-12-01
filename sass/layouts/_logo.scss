@@ -1,5 +1,7 @@
 .logo {
   @include respond-to(max-mobile) {
+    display: flex;
+    align-items: center;
     fill: getColor(primary-white);
   }
 }
