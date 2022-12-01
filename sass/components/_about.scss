@@ -1,0 +1,62 @@
+.about {
+  &__subtitle {
+    @include respond-to(max-mobile) {
+      display: block;
+      position: relative;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 1.36;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+      color: getColor(primary-dark);
+      padding-left: 80px;
+      margin-bottom: 20px;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 60px;
+        height: 1px;
+        left: 0;
+        top: 50%;
+        background-color: getColor(primary-dark);
+      }
+    }
+  }
+
+  &__title {
+    @include respond-to(max-mobile) {
+      font-family: getFont(secondary);
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 1.18;
+      letter-spacing: 0.05em;
+
+      max-width: 306px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__call {
+    @include respond-to(max-mobile) {
+      font-size: 16px;
+      line-height: 1.62;
+      letter-spacing: 0.02em;
+      color: getColor(about-text);
+
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+    @include respond-to(max-mobile) {
+      font-size: 14px;
+      line-height: 1.86;
+      letter-spacing: 0.02em;
+      color: getColor(about-text);
+
+      margin-bottom: 40px;
+    }
+  }
+}

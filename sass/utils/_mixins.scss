@@ -43,3 +43,11 @@
     }
   }
 }
+
+@mixin base-transition($property) {
+  transition: $property getAnim(time) getAnim(func);
+}
+
+@mixin dual-transition($a-property, $b-property) {
+  transition: $a-property getAnim(time) getAnim(func), $b-property getAnim(time) getAnim(func);
+}

@@ -44,6 +44,15 @@ $shadows: (
   @return map-get($shadows, $var);
 }
 
+$borders: (
+  'button': (
+    1px solid #ff6c00,
+  ),
+);
+@function getBorder($var) {
+  @return map-get($borders, $var);
+}
+
 // ========== fonts ==========
 
 $fonts: (
@@ -61,7 +70,16 @@ $fonts: (
   @return map-get($fonts, $var);
 }
 
-// ========== breakpoints ==========
+// ========== sizes ==========
+
+$transition: (
+  'time': 250ms,
+  'func': cubic-bezier(0.4, 0, 0.2, 1),
+);
+
+@function getAnim($var) {
+  @return map-get($transition, $var);
+}
 
 $sizes: (
   'mobile-width': 480px,
@@ -72,6 +90,8 @@ $sizes: (
 @function getSize($var) {
   @return map-get($sizes, $var);
 }
+
+// ========== breakpoints ==========
 
 $breakpoints: (
   'mobile': (
