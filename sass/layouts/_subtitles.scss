@@ -1,0 +1,40 @@
+.subtitle {
+  position: relative;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  padding-left: 80px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 1px;
+    left: 0;
+    top: 50%;
+    background-color: inherit;
+  }
+
+  &--light {
+    color: getColor(about-text);
+
+    &::before {
+      background-color: getColor(about-text);
+    }
+  }
+
+  &--dark {
+    color: getColor(hero-sub);
+
+    &::before {
+      background-color: getColor(hero-sub);
+    }
+  }
+
+  &--separated {
+    margin-bottom: 20px;
+  }
+}

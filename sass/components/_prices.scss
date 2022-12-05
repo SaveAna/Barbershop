@@ -27,4 +27,17 @@
       background-image: url('../images/desktop/bg/prices-1600@2x.png');
     }
   }
+
+  //   &__subtitle {
+  //     @include respond-to(max-mobile) {
+  //       position: relative;
+  //       font-weight: 600;
+  //       font-size: 11px;
+  //       line-height: 1.36;
+  //       text-transform: uppercase;
+  //       color: getColor(hero-descript);
+
+  //       margin-bottom: 20px;
+  //     }
+  //   }
 }

@@ -140,6 +140,40 @@ button {
   background-color: #fff;
 }
 
+.subtitle {
+  position: relative;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-left: 80px;
+}
+.subtitle::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 1px;
+  left: 0;
+  top: 50%;
+  background-color: inherit;
+}
+.subtitle--light {
+  color: #555555;
+}
+.subtitle--light::before {
+  background-color: #555555;
+}
+.subtitle--dark {
+  color: rgba(157, 164, 189, 0.6);
+}
+.subtitle--dark::before {
+  background-color: rgba(157, 164, 189, 0.6);
+}
+.subtitle--separated {
+  margin-bottom: 20px;
+}
+
 .burger-toggle {
   fill: #fff;
   padding-left: 0;
@@ -201,28 +235,6 @@ button {
   }
 }
 @media screen and (max-width: 767px) {
-  .hero__subtitle {
-    position: relative;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba(157, 164, 189, 0.6);
-    padding-left: 80px;
-    margin-bottom: 20px;
-  }
-  .hero__subtitle::before {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 1px;
-    left: 0;
-    top: 50%;
-    background-color: rgba(157, 164, 189, 0.6);
-  }
-}
-@media screen and (max-width: 767px) {
   .hero__title {
     font-family: "Raleway", sans-serif;
     font-size: 48px;
@@ -243,29 +255,6 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .about__subtitle {
-    display: block;
-    position: relative;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #303030;
-    padding-left: 80px;
-    margin-bottom: 20px;
-  }
-  .about__subtitle::before {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 1px;
-    left: 0;
-    top: 50%;
-    background-color: #303030;
-  }
-}
-@media screen and (max-width: 767px) {
   .about__title {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -281,7 +270,6 @@ button {
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.02em;
-    color: #555555;
     margin-bottom: 20px;
   }
 }
