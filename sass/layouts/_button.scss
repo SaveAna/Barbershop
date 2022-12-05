@@ -16,17 +16,17 @@
   &:focus {
     background-color: getColor(accent);
   }
-}
 
-.light {
-  color: getColor(primary-dark);
+  &--light {
+    color: getColor(primary-dark);
 
-  &:hover,
-  &:focus {
+    &:hover,
+    &:focus {
+      color: getColor(primary-white);
+    }
+  }
+
+  &--dark {
     color: getColor(primary-white);
   }
-}
-
-.dark {
-  color: getColor(primary-white);
 }

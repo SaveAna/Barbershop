@@ -1,0 +1,30 @@
+.price {
+  background-color: getBgColor(overlay);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include respond-to(max-mobile) {
+    background-image: url('../images/mobile/bg/prices-480.png');
+
+    @include respond-to(retina) {
+      background-image: url('../images/mobile/bg/prices-480@2x.png');
+    }
+  }
+
+  @include respond-to(tablet) {
+    background-image: url('../images/tablet/bg/prices-768.png');
+
+    @include respond-to(retina) {
+      background-image: url('../images/tablet/bg/prices-768@2x.png');
+    }
+  }
+
+  @include respond-to(desktop) {
+    background-image: url('../images/desktop/bg/prices-1600.png');
+
+    @include respond-to(retina) {
+      background-image: url('../images/desktop/bg/prices-1600@2x.png');
+    }
+  }
+}
