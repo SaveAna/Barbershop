@@ -1,0 +1,24 @@
+.stat-info {
+  &__title {
+    @include respond-to(max-mobile) {
+      font-family: getFont(secondary);
+      font-size: 42px;
+      line-height: 1.17;
+      letter-spacing: 0.05em;
+
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+    @include respond-to(max-mobile) {
+      font-size: 18px;
+      line-height: 1.67;
+
+      letter-spacing: 0.02em;
+      color: getColor(about-text);
+
+      margin-bottom: 44px;
+    }
+  }
+}

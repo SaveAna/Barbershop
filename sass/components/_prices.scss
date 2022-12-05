@@ -60,17 +60,13 @@
   &__item {
     display: flex;
     align-items: baseline;
-    // justify-content: baseline;
+    gap: 12px;
     color: getColor(hero-descript);
 
     &::before {
       content: '';
       flex-grow: 1;
       height: 1px;
-      margin-left: 12px;
-      margin-right: 12px;
-      left: 0;
-      top: o;
       background-color: getBgColor(price-decoration);
     }
   }
@@ -79,37 +75,6 @@
     order: -1;
   }
 
-  // .price-item {
-  //   display: flex;
-  //   align-items: baseline;
-
-  //   color: var(--grey-cl);
-
-  //   @include mq(tablet, max) {
-  //     font-size: 14px;
-  //     line-height: calc(20 / 14);
-  //     letter-spacing: 0.02em;
-  //   }
-
-  //   &:not(:last-child) {
-  //     margin-bottom: 20px;
-  //   }
-
-  //   &::before {
-  //     content: '';
-
-  //     flex-grow: 1;
-  //     height: 1px;
-  //     margin-left: 12px;
-  //     margin-right: 12px;
-  //     background-color: rgba(157, 164, 189, 0.12);
-  //   }
-  // }
-
-  // .price-service {
-  //   order: -1;
-  // }
-
   &__item:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -117,11 +82,6 @@
   &__services:not(:last-child) {
     margin-bottom: 20px;
   }
-
-  // &__box {
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
 
   &__name,
   &__value {
