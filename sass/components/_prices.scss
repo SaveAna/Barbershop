@@ -28,16 +28,103 @@
     }
   }
 
-  //   &__subtitle {
-  //     @include respond-to(max-mobile) {
-  //       position: relative;
-  //       font-weight: 600;
-  //       font-size: 11px;
-  //       line-height: 1.36;
-  //       text-transform: uppercase;
-  //       color: getColor(hero-descript);
+  &__title {
+    @include respond-to(max-mobile) {
+      font-family: getFont(secondary);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 1.18;
 
-  //       margin-bottom: 20px;
-  //     }
+      letter-spacing: 0.05em;
+      color: getColor(primary-white);
+
+      margin-bottom: 44px;
+    }
+  }
+
+  &__container {
+    @include respond-to(max-mobile) {
+      background: getBgColor(gradient-1);
+      padding: 30px 20px 30px 40px;
+
+      font-size: 14px;
+      line-height: 1.43;
+
+      letter-spacing: 0.02em;
+
+      margin-bottom: 44px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: baseline;
+    // justify-content: baseline;
+    color: getColor(hero-descript);
+
+    &::before {
+      content: '';
+      flex-grow: 1;
+      height: 1px;
+      margin-left: 12px;
+      margin-right: 12px;
+      left: 0;
+      top: o;
+      background-color: getBgColor(price-decoration);
+    }
+  }
+
+  &__service {
+    order: -1;
+  }
+
+  // .price-item {
+  //   display: flex;
+  //   align-items: baseline;
+
+  //   color: var(--grey-cl);
+
+  //   @include mq(tablet, max) {
+  //     font-size: 14px;
+  //     line-height: calc(20 / 14);
+  //     letter-spacing: 0.02em;
   //   }
+
+  //   &:not(:last-child) {
+  //     margin-bottom: 20px;
+  //   }
+
+  //   &::before {
+  //     content: '';
+
+  //     flex-grow: 1;
+  //     height: 1px;
+  //     margin-left: 12px;
+  //     margin-right: 12px;
+  //     background-color: rgba(157, 164, 189, 0.12);
+  //   }
+  // }
+
+  // .price-service {
+  //   order: -1;
+  // }
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__services:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  // &__box {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
+
+  &__name,
+  &__value {
+    margin-bottom: 20px;
+  }
 }
