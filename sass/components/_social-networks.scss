@@ -1,0 +1,29 @@
+.social-networks {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: getColor(primary-white);
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &__link:focus-visible {
+    outline: none;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: getColor(primary-white);
+    background-color: getColor(accent);
+  }
+}

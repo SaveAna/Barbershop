@@ -436,4 +436,76 @@ button {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
+}
+
+.masters {
+  background-color: #f7f7f7;
+}
+.masters__card:not(:last-child) {
+  margin-bottom: 64px;
+}
+.masters__photo {
+  display: block;
+  margin-bottom: 30px;
+}
+.masters__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  margin-bottom: 44px;
+}
+@media screen and (max-width: 767px) {
+  .masters__card {
+    width: 100%;
+    text-align: center;
+  }
+}
+.masters__name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.masters__position {
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  margin-bottom: 30px;
+}
+
+.social-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+.social-networks__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.social-networks__icon {
+  fill: currentColor;
+}
+.social-networks__link:focus-visible {
+  outline: none;
+}
+.social-networks__link:hover, .social-networks__link:focus {
+  color: #fff;
+  background-color: #ff6c00;
 }/*# sourceMappingURL=main.css.map */
