@@ -18,10 +18,10 @@
   }
 
   &--light {
-    color: getColor(about-text);
+    color: getColor(primary-dark);
 
     &::before {
-      background-color: getColor(about-text);
+      background-color: getColor(primary-dark);
     }
   }
 
@@ -35,5 +35,11 @@
 
   &--separated {
     margin-bottom: 20px;
+  }
+}
+
+.gallery {
+  .subtitle--separated {
+    margin-bottom: 71px;
   }
 }

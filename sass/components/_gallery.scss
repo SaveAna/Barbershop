@@ -1,0 +1,6 @@
+.gallery {
+  &__photo:not(:last-child) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
