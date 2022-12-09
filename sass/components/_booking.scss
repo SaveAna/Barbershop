@@ -1,0 +1,14 @@
+.booking {
+  background-color: getBgColor(dark);
+
+  &__title {
+    font-family: getFont(secondary);
+    font-size: 42px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: getColor(primary-white);
+
+    margin-bottom: 44px;
+  }
+}
